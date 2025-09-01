@@ -30,9 +30,9 @@ const Navber = () => {
     <nav className="bg-opacity-25 md:fixed w-full bg-gradient-to-r from-[#BBD2C5] via-[#536976] to-[#536976] p-4">
       <div className="container mx-auto flex items-center justify-between">
         {/* Left: Location */}
-        <div className="text-[#536a77] text-sm">
+        <div className=" text-blue-950  text-sm">
           <NavLink to={'/'}>
-            Nu<span className='text-teal-800 font-bold'>RUZZ</span>aman
+            Nu<span className='text-teal-600 font-bold'>RUZZ</span>aman
           </NavLink>
         </div>
 
