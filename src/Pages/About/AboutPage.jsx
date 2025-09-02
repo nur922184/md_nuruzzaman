@@ -1,5 +1,5 @@
 import React from "react";
-import profileImg from "../../assets/nuruzzaman.jpeg";
+import profileImg from "../../assets/nur-1.jpg";
 import IaWeb from "../../assets/IA-web.jpg"
 import openit from "../../assets/open_it.jpeg";
 import animation from "../../assets/original-gf.gif";
@@ -86,7 +86,7 @@ const AboutPage = () => {
                 <span className="font-semibold">Contact:</span> +880 1707-530810
               </p>
               <a
-                href="https://eshikhon.com"
+                href="https://openit-edu.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-teal-300 font-medium hover:underline"
@@ -103,16 +103,16 @@ const AboutPage = () => {
                 Intro
               </h4>
               <p className="text-gray-100 mb-4">
-                Open IT Instititute ” is a modern computer training center. It is an affiliate of the “Bangladesh Technical Education Board“. We think that the reason for this success is our goal-purpose & everyone's cooperation.
+                Open IT Instititute ” is a modern computer training center. Open IT is a leading BTEB training provider operating throughout Bangladesh, specializing in professional and customized training courses. It is an affiliate of the “Bangladesh Technical Education Board“. We excel in delivering tailored solutions that meet the diverse needs of our clients, ensuring their success in the dynamic world of technology.  We think that the reason for this success is our goal-purpose & everyone's cooperation.
               </p>
               <p className="text-gray-100 mb-2">
                 <span className="font-semibold">Accreditation:</span> MFHEA, Malta
               </p>
               <p className="text-gray-100 mb-2">
-                <span className="font-semibold">Contact:</span> hello@opit.com
+                <span className="font-semibold">Contact:</span> openitinstitute@gmail.com
               </p>
               <a
-                href="https://opit.com"
+                href="https://openit-edu.web.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-teal-300 font-medium hover:underline"

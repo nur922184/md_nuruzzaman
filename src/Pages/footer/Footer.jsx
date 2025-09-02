@@ -25,7 +25,7 @@ const Footer = () => {
                                 <li><a href="#about" className="hover:text-teal-400">About</a></li>
                                 <li><a href="#courses" className="hover:text-teal-400">Courses</a></li>
                                 <li><a href="#portfolio" className="hover:text-teal-400">Portfolio</a></li>
-                                <li><a href="#contact" className="hover:text-teal-400">Contact</a></li>
+                                <li id="contact"><a href="#contact" className="hover:text-teal-400">Contact</a></li>
                             </ul>
                         </div>
 
@@ -57,7 +57,7 @@ const Footer = () => {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="border-t border-gray-700 mt-10 pt-6 text-center text-gray-500 text-sm">
+                <div className="border-t border-gray-700 mt-10 pt-6 mb-8 md:mb-0 text-center text-gray-500 text-sm">
                     © {new Date().getFullYear()} Md. Nuruzzaman. All rights reserved.
                 </div>
             </div>

@@ -3,7 +3,7 @@ import { FaFacebook, FaGithub, FaLinkedin, FaMailBulk, FaMapPin, FaPhone } from 
 import Me from "../../assets/nuruzzaman.jpeg";
 const ContactSections = () => {
     return (
-        <section className="bg-gradient-to-r from-[#BBD2C5] via-[#536976] to-[#536976] py-16">
+        <section id='contact' className="bg-gradient-to-r from-[#BBD2C5] via-[#536976] to-[#536976] py-16">
             <div className="container mx-auto px-6 md:px-12 max-w-6xl">
 
                 {/* Header */}
@@ -25,12 +25,14 @@ const ContactSections = () => {
                         </h3>
                         <div className="flex items-center gap-4 mb-4">
                             <FaMailBulk className="w-6 h-6 text-teal-300" />
-                            <p>nuruzzaman@example.com</p>
+                            <a href="mailto:nuruzzaman.engbd@gmail.com">nuruzzaman.engbd@gmail.com</a>
+                            {/* <p>nuruzzaman.engbd@gmail.com</p> */}
                         </div>
 
                         <div className="flex items-center gap-4 mb-4">
                             <FaPhone className="w-6 h-6 text-teal-300" />
-                            <p>+880 1707-530810</p>
+                            <a href="tel:+880 1707-530810">+880 1707-530810</a>
+                            {/* <p>+880 1707-530810</p> */}
                         </div>
 
                         <div className="flex items-center gap-4 mb-6">

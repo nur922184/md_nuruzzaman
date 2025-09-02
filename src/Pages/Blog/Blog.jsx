@@ -34,17 +34,20 @@ const Blog = () => {
         <div className="min-h-screen bg-gradient-to-r from-[#BBD2C5] via-[#536976] to-[#536976] text-teal-900">
 
             <div className="md:pt-20">
-                {/* Header */}
-                <div style={{
-                     backgroundImage: `url(${blog_hero})`,
-                }}
-                    className="flex h-96 md:w-[1200px] mx-auto px-52  flex-col md:bg-top bg-center bg-cover items-center justify-center text-center bg-opa">
-                    <div className=" py-10">
-                        <div className="max-w-2xl">
-                            <h1 className="text-4xl font-bold text-teal-300"></h1>
-                            {/* <p className="py-4 text-lg text-gray-100">
-                                Sharing knowledge, experiences, and stories from my journey.
-                            </p> */}
+                <div
+                    style={{
+                        backgroundImage: `url(${blog_hero})`,
+                    }}
+                    className="flex h-64 md:h-96 w-full mx-auto px-4 md:px-20 flex-col bg-top bg-cover items-center justify-center text-center"
+                >
+                    <div className="py-6 md:py-10">
+                        <div className="max-w-2xl mx-auto">
+                            <h1 className="text-2xl md:text-4xl font-bold text-teal-300">
+                                {/* My Blog */}
+                            </h1>
+                            <p className="py-2 md:py-4 text-sm md:text-lg text-gray-100">
+                                {/* Sharing knowledge, experiences, and stories from my journey. */}
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -103,7 +106,7 @@ const Blog = () => {
                 </section>
 
                 {/* Categories */}
-                <section className="bg-white/10 w-screen py-12">
+                <section className="bg-white/10 py-12">
                     <div className="max-w-6xl mx-auto px-4">
                         <h2 className="text-2xl font-bold mb-6 text-teal-200">📂 Categories</h2>
                         <div className="flex flex-wrap gap-3">

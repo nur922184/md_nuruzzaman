@@ -4,6 +4,8 @@ import Mainlayout from '../Mainlayout/Mainlayout';
 import Home from '../Pages/home/Home';
 import AboutPage from '../Pages/About/AboutPage';
 import Blog from '../Pages/Blog/Blog';
+import ServicesPage from '../Pages/Service/ServicesPage';
+import ErrorPage from '../Pages/ErrorPage';
 
 const Router = createBrowserRouter([
     {
@@ -22,11 +24,15 @@ const Router = createBrowserRouter([
                 path: "/blog",
                 element: <Blog></Blog>,
             },
+            {
+                path: "/service",
+                element: <ServicesPage></ServicesPage>,
+            },
         ]    
     },
     {
         path: "*",
-        element: <h1 className='text-center align-middle'>error page</h1>,
+        element: <ErrorPage></ErrorPage>,
     },
 
 ]);

@@ -68,7 +68,7 @@ const Navber = () => {
           </li>
           <li>
             <NavLink
-              to="/work"
+              to="/service"
               className={({ isActive }) =>
                 `flex items-center gap-2 ${isActive
                   ? 'text-teal-400 border-b-2 border-teal-400'
@@ -77,7 +77,7 @@ const Navber = () => {
               }
             >
               <FaBriefcase />
-              Work
+              Service
             </NavLink>
           </li>
           <li>
@@ -142,7 +142,7 @@ const Navber = () => {
           </li>
           <li>
             <NavLink
-              to="/work"
+              to="/service"
               className={({ isActive }) =>
                 `${isActive
                   ? 'text-teal-400'
