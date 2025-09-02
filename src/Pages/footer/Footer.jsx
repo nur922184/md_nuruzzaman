@@ -11,7 +11,7 @@ const Footer = () => {
                     <div>
                         <h2 className="text-xl font-semibold text-white mb-4">About Me</h2>
                         <p className="text-gray-400 text-sm leading-relaxed">
-                            I am Md. Mukuluzzaman, an experienced IT Instructor passionate
+                            I am Md. Nuruzzaman, an experienced IT Instructor passionate
                             about teaching computer applications, design, and development.
                             My mission is to help students build strong technical skills for
                             their future careers.

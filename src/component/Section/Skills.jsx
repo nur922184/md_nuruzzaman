@@ -55,7 +55,7 @@ const Skills = () => {
             {softSkills.map((soft, index) => (
               <div
                 key={index}
-                className="flex items-center gap-3 bg-gray-800 px-6 py-3 rounded-xl shadow-md hover:scale-105 transform transition"
+                className="flex items-center gap-3 bg-gray-800 px-6 py-3 rounded-xl shadow-md hover:scale-105  transition"
               >
                 {soft.icon}
                 <span className="text-lg">{soft.name}</span>

@@ -1,4 +1,9 @@
 import React from "react";
+import code from "../../assets/prg_code.jpg"
+import web_tecnology from "../../assets/web_tecnology.png"
+import teamwork from "../../assets/teamwork-in-office-stockcake.jpg"
+import web_devolop from "../../assets/web-development-south-africa.jpg"
+import blog_hero from "../../assets/blog_hero.png"
 
 const Blog = () => {
     const blogs = [
@@ -7,37 +12,39 @@ const Blog = () => {
             title: "The Future of Web Development",
             desc: "Discover the latest trends and technologies shaping the future of modern web applications.",
             date: "Aug 28, 2025",
-            img: "https://source.unsplash.com/600x400/?technology,web",
+            img: web_tecnology,
         },
         {
             id: 2,
             title: "Top 10 Programming Languages in 2025",
             desc: "A detailed guide to the most in-demand programming languages for developers.",
             date: "Aug 20, 2025",
-            img: "https://source.unsplash.com/600x400/?programming,code",
+            img: code,
         },
         {
             id: 3,
             title: "Mastering Soft Skills as a Developer",
-            desc: "Learn how teamwork, leadership, and problem-solving can boost your IT career.",
+            desc: "Learn how teamwork, leadership, and problem-sonlving can boost your IT career.",
             date: "Aug 15, 2025",
-            img: "https://source.unsplash.com/600x400/?teamwork,office",
+            img: teamwork,
         },
     ];
 
     return (
         <div className="min-h-screen bg-gradient-to-r from-[#BBD2C5] via-[#536976] to-[#536976] text-teal-900">
-        
-            {/* কনটেন্ট শুরু হবে Navbar এর নিচ থেকে */}
-            <div className="pt-20">
+
+            <div className="md:pt-20">
                 {/* Header */}
-                <div className="hero">
-                    <div className="hero-content text-center py-10">
+                <div style={{
+                     backgroundImage: `url(${blog_hero})`,
+                }}
+                    className="flex h-96 md:w-[1200px] mx-auto px-52  flex-col md:bg-top bg-center bg-cover items-center justify-center text-center bg-opa">
+                    <div className=" py-10">
                         <div className="max-w-2xl">
-                            <h1 className="text-4xl font-bold text-teal-300">My Blog</h1>
-                            <p className="py-4 text-lg text-teal-100">
+                            <h1 className="text-4xl font-bold text-teal-300"></h1>
+                            {/* <p className="py-4 text-lg text-gray-100">
                                 Sharing knowledge, experiences, and stories from my journey.
-                            </p>
+                            </p> */}
                         </div>
                     </div>
                 </div>
@@ -45,10 +52,10 @@ const Blog = () => {
                 {/* Featured Blog */}
                 <section className="max-w-6xl mx-auto px-4 py-12">
                     <h2 className="text-2xl font-bold mb-6 text-teal-200">✨ Featured Blog</h2>
-                    <div className="card lg:card-side bg-white/10  border border-white/20 shadow-xl">
+                    <div className="md:flex bg-white/10  border border-white/20 shadow-xl">
                         <figure>
                             <img
-                                src="https://placehold.co/600x400"
+                                src={web_devolop}
                                 alt="Featured Blog"
                                 className="w-full lg:w-96 object-cover"
                             />
@@ -72,7 +79,7 @@ const Blog = () => {
                     <h2 className="text-2xl font-bold mb-6 text-teal-200">📚 Latest Blogs</h2>
                     <div className="grid md:grid-cols-3 gap-6">
                         {blogs.map((blog) => (
-                            <div key={blog.id} className="card bg-white/10  border border-white/20 ">
+                            <div key={blog.id} className=" bg-white/10  border border-white/20 ">
                                 <figure>
                                     <img
                                         src={blog.img}
@@ -96,7 +103,7 @@ const Blog = () => {
                 </section>
 
                 {/* Categories */}
-                <section className="bg-white/10  py-12">
+                <section className="bg-white/10 w-screen py-12">
                     <div className="max-w-6xl mx-auto px-4">
                         <h2 className="text-2xl font-bold mb-6 text-teal-200">📂 Categories</h2>
                         <div className="flex flex-wrap gap-3">
@@ -117,16 +124,18 @@ const Blog = () => {
                     <p className="mb-6 text-teal-100">
                         Stay updated with the latest blogs, tutorials, and stories.
                     </p>
-                    <div className="join">
-                        <input
-                            type="text"
-                            placeholder="Enter your email"
-                            className="input input-bordered join-item w-64 border-teal-300 focus:outline-none focus:ring focus:ring-teal-500"
-                        />
-                        <button className="btn bg-teal-400 hover:bg-teal-600 border-none text-white join-item">
-                            Subscribe
+                    <form className="flex justify-center items-center space-x-2">
+                        <div class="input-container">
+                            <input className="px-4 py-1 rounded-md bg-teal-950 text-white focus:outline-none focus:ring-2 focus:ring-teal-300 w-72" placeholder="Email" type="email" required />
+                        </div>
+                        <button
+                            type="submit"
+                            // className="glowbutton"
+                            className=" py-2 btn btn-sm w-26 bg-teal-300 text-black font-medium rounded-md hover:bg-teal-400 focus:outline-none focus:ring-2 focus:ring-red-500"
+                        >
+                            Subscription
                         </button>
-                    </div>
+                    </form>
                 </section>
             </div>
         </div>
