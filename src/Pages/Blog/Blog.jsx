@@ -128,15 +128,16 @@ const Blog = () => {
                         Stay updated with the latest blogs, tutorials, and stories.
                     </p>
                     <form className="flex justify-center items-center space-x-2">
-                        <div class="input-container">
+                        <div class="input-container h-full">
                             <input className="px-4 py-1 rounded-md bg-teal-950 text-white focus:outline-none focus:ring-2 focus:ring-teal-300 w-72" placeholder="Email" type="email" required />
                         </div>
                         <button
                             type="submit"
                             // className="glowbutton"
-                            className=" py-2 btn btn-sm w-26 bg-teal-300 text-black font-medium rounded-md hover:bg-teal-400 focus:outline-none focus:ring-2 focus:ring-red-500"
+                            className=" py-2 btn btn-sm  bg-teal-300 text-black font-medium rounded-md hover:bg-teal-400 focus:outline-none focus:ring-2 focus:ring-red-500"
                         >
-                            Subscription
+
+                            subscribe
                         </button>
                     </form>
                 </section>
