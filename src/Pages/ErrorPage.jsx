@@ -1,6 +1,6 @@
 export default function ErrorPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-800 px-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-[#BBD2C5] via-[#536976] to-[#536976] px-4">
       <div className="text-center">
         {/* Error Number */}
         <h1 className="text-7xl md:text-9xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-cyan-400 drop-shadow-lg">
